@@ -44,10 +44,12 @@ app.get('/', (req, res) => {
 // --- Server Configuration ---
 // Define the port the server will listen on.
 // Use the environment variable PORT if available, otherwise default to 5000.
-const PORT = process.env.PORT || 5000;
+// const PORT = process.env.PORT || 5000;
 
 // --- Start the Server ---
 // The app.listen() function starts a UNIX socket and listens for connections on the specified path.
-app.listen(PORT, () => {
-    console.log(`Server is running on port ${PORT}`);
-});
+// app.listen(PORT, () => {
+//     console.log(`Server is running on port ${PORT}`);
+// });
+
+module.exports = app;
