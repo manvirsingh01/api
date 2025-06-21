@@ -27,12 +27,12 @@ app.use(express.json());
 // --- Define API Routes ---
 // The server will use the imported route modules for any requests matching these paths.
 // For example, a request to /api/students/list will be handled by the studentRoutes module.
-app.use('/api/buslog', busLogRoutes);
-app.use('/api/generatorlog', generatorLogRoutes);
-app.use('/api/filelog', fileLogRoutes);
-app.use('/api/departments', departmentRoutes);
-app.use('/api/employees', employeeRoutes);
-app.use('/api/students', studentRoutes);
+app.use('/buslog', busLogRoutes);
+app.use('/filelog', fileLogRoutes);
+app.use('/generatorlog', generatorLogRoutes);
+app.use('/departments', departmentRoutes);
+app.use('/employees', employeeRoutes);
+app.use('/students', studentRoutes);
 
 // --- Root Route ---
 // A simple GET route to confirm that the server is running.
