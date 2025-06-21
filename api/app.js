@@ -9,12 +9,12 @@ const express = require('express');
 // --- Import all route modules ---
 // Make sure the path to these files is correct based on your project structure.
 // It's common practice to put route files in a 'routes' directory.
-const busLogRoutes = require('./routes/busLogRoutes');
-const generatorLogRoutes = require('./routes/generatorLogRoutes');
-const fileLogRoutes = require('./routes/fileLogRoutes');
-const departmentRoutes = require('./routes/departments');
-const employeeRoutes = require('./routes/employees');
-const studentRoutes = require('./routes/students');
+const busLogRoutes = require('../routes/busLogRoutes');
+const generatorLogRoutes = require('../routes/generatorLogRoutes');
+const fileLogRoutes = require('../routes/fileLogRoutes');
+const departmentRoutes = require('../routes/departments');
+const employeeRoutes = require('../routes/employees');
+const studentRoutes = require('../routes/students');
 
 // Initialize the Express app
 const app = express();
